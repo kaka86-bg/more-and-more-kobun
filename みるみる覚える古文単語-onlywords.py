@@ -22,7 +22,7 @@ if "MY_PASSWORD" in st.secrets:
 # ==========================================
 # 画面の設定
 # ==========================================
-st.title("単語・例文テスト作成アプリ 📝")
+st.title("みるみる古文単語テスト作成アプリ 📝")
 st.write("Excelファイルをアップロードして、範囲を指定してください。")
 
 # ==========================================
@@ -187,4 +187,5 @@ if 'pdf_q' in st.session_state:
             data=st.session_state['pdf_a'],
             file_name=f"答え_{suffix}.pdf",
             mime="application/pdf"
+
         )

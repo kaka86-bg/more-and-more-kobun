@@ -94,7 +94,7 @@ def create_pdf(questions, answers, start_num, end_num, actual_num, mode="questio
     # タイトル
     title_text = f"名前:＿＿＿＿＿＿＿＿＿＿＿＿＿＿   範囲：No.{start_num}～{end_num} からランダムに{actual_num}問"
     c.drawString(20*mm, height - 20*mm, title_text)
-    c.drawString(20*mm, height - 28*mm, "答えの〔No.～〕は単語番号です。")
+    c.drawString(20*mm, height - 28*mm, "答えの〔No.～〕は単語番号です。ずれているものもあります。")
     
     y_position = height - 45*mm
     
@@ -189,3 +189,4 @@ if 'pdf_q' in st.session_state:
             mime="application/pdf"
 
         )
+

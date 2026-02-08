@@ -1,4 +1,5 @@
 streamlit
 python-docx
 reportlab
+openpyxl
 pandas
